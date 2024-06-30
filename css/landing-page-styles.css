@@ -10,23 +10,34 @@ a {
 }
 /*below begins the header selectors*/
 
+.all {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+
+}
+
 .header {
     display: flex;
     justify-content: center;
     background-color: #1f2937;
     color: #f9faf8;
     margin: 0px;
-    padding-top: 0px;
-    padding-left:180px;
-    padding-right: 180px;
+    padding-top: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
     padding-bottom: 80px;
+    flex-shrink: auto;
 
 
 }
 
 .header-body-txt {
-padding: 0px;
-margin: 0px;
+    padding: 0px;
+    margin: 0px;
+ 
 
 }
 
@@ -54,14 +65,40 @@ h1 {
 .left, .right {
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
-
+justify-content: space-between;
+min-width: 0;
+margin: 20px;
+flex: 1 1 0;
 
 }
 
+
 .left {
     display: flex;
-    padding-right: 160px;
+    padding-right: 20px;
+    min-width: 0;
+    flex: 1 1 0;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.right {
+    
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    flex: 1 1 0;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.stock_01 {
+    height: 180px; 
+    width: 320px;
+    border: 3px solid black;
+
 }
 
 .logo {
@@ -70,7 +107,7 @@ justify-content: space-evenly;
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
-    padding-top: 0px;
+    white-space: nowrap;
 }
 
 li {
@@ -88,6 +125,7 @@ ul {
     gap: 20px;
     padding: 0px;
     margin: 0px;
+    flex-shrink: auto;
 
 }
 
@@ -103,22 +141,15 @@ ul {
     font-size: 18px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     
 }
 
-.right {
-    padding-top: 50px;
-    gap: 80px;
+
+ .stock_01 {
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
 }
-
-.webawesome {
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
 
 /*Below begins the random information section selectors*/
 
@@ -164,10 +195,9 @@ ul {
 
 .quote-container {
     background-color: #e5e7eb;
-    padding-top: 160px;
-    padding-bottom: 160px;
-    padding-left: 320px;
-    padding-right: 320px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+=
 
 }
 
@@ -212,7 +242,6 @@ ul {
 .call-to-action {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     
 }
@@ -222,7 +251,10 @@ ul {
     background-color: #3882f6;
     color: #f9faf8;
     margin: 80px;
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     flex-wrap: wrap;
     display: flex;
@@ -241,7 +273,7 @@ ul {
     flex-wrap: wrap;
     flex-basis: 100%;
     justify-content: space-between;
-    gap: 100px;
+    gap: 50px;
     margin-left: 0px;
     margin-right: 80px;
     
